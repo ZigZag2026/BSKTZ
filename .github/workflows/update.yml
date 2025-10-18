@@ -34,7 +34,7 @@ jobs:
       # 3. Télécharger le CSV depuis Google Sheets
       - name: Download Google Sheet CSV
         run: |
-          curl -L "https://docs.google.com/spreadsheets/d/e/2output=csv" -o data.csv
+          curl -L "https://docs.google.com/spreadsheets/d/e/2PACX-1vTwM80U724A6VNLNXjiC9GNlfCoR0p4sAq9OjmZT774X17x-srPlgQ_5Wx0ZLtzDwfFISP8L1ylN5KQ/pub?gid=0&single=true&output=csv" -o data.csv
 
       # 4. Supprimer l’ancien GeoJSON
       - name: Clean old GeoJSON
