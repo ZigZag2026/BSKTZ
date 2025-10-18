@@ -515,8 +515,8 @@
         "CAT3": "0",
         "%F": "50.0",
         "FORM_formulaire": "https://docs.google.com/forms/d/e/1FAIpQLSc8YEbZkhGZrWcOFF9xQWS5M8g3vYrkFLR8hs17xK1-hZRk9A/viewform?usp=pp_url&entry.1055929021=1021 Chemin Ospitalia&entry.865823250=BES1020",
-        "NB_PASS": "0",
-        "STATUT": "Jamais passé",
+        "NB_PASS": "1",
+        "STATUT": "Passé 1 fois",
         "FORM": "https://docs.google.com/forms/d/e/1FAIpQLSc8YEbZkhGZrWcOFF9xQWS5M8g3vYrkFLR8hs17xK1-hZRk9A/viewform?usp=pp_url&entry.1055929021=1021%20Chemin%20Ospitalia&entry.865823250=BES1020",
         "ID": 20
       }
