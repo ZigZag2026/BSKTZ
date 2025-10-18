@@ -1,0 +1,60 @@
+
+name: Update GeoJSON from Google Sheets
+
+# Déclencheurs
+on:
+  schedule:
+#    - cron: "0 * * * *"   # toutes les heures
+    - cron: "0 0 * * *"   # toutes les jours à minuit
+  workflow_dispatch:      # permet de lancer manuellement
+
+# Permissions pour push
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Récupérer le code
+      - name: Checkout repo
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+
+      # 2. Installer Python et Pandas
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.x"
+
+
+      # 3. Télécharger le CSV depuis Google Sheets
+      - name: Download Google Sheet CSV
+        run: |
+          curl -L "https://docs.google.com/spreadsheets/d/e/2output=csv" -o data.csv
+
+      # 4. Supprimer l’ancien GeoJSON
+      - name: Clean old GeoJSON
+        run: rm -f data.geojson
+
+      # 5. Générer le GeoJSON
+      - name: Run conversion script
+        run: python scripts/csv_to_geojson.py
+
+      # 6. Commit et push
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add -A
+          git commit -m "Update geojson from Google Sheets [skip ci]" || echo "No changes"
+
+          # Synchroniser avec main avant push pour éviter les conflits
+          git fetch origin main
+          git pull origin main --rebase || true
+
+          git push origin main
