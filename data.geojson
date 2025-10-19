@@ -1503,8 +1503,8 @@
         "CAT3": "0",
         "%F": "50.0",
         "FORM_formulaire": "https://docs.google.com/forms/d/e/1FAIpQLSc8YEbZkhGZrWcOFF9xQWS5M8g3vYrkFLR8hs17xK1-hZRk9A/viewform?usp=pp_url&entry.1055929021=111 Chemin Galbarreta&entry.865823250=BES1058",
-        "NB_PASS": "0",
-        "STATUT": "Jamais passé",
+        "NB_PASS": "1",
+        "STATUT": "Passé 1 fois",
         "FORM": "https://docs.google.com/forms/d/e/1FAIpQLSc8YEbZkhGZrWcOFF9xQWS5M8g3vYrkFLR8hs17xK1-hZRk9A/viewform?usp=pp_url&entry.1055929021=111%20Chemin%20Galbarreta&entry.865823250=BES1058",
         "ID": 58
       }
@@ -5533,8 +5533,8 @@
         "CAT3": "1",
         "%F": "50.0",
         "FORM_formulaire": "https://docs.google.com/forms/d/e/1FAIpQLSc8YEbZkhGZrWcOFF9xQWS5M8g3vYrkFLR8hs17xK1-hZRk9A/viewform?usp=pp_url&entry.1055929021=160 Chemin Extebekoborda&entry.865823250=BES1213",
-        "NB_PASS": "0",
-        "STATUT": "Jamais passé",
+        "NB_PASS": "1",
+        "STATUT": "Passé 1 fois",
         "FORM": "https://docs.google.com/forms/d/e/1FAIpQLSc8YEbZkhGZrWcOFF9xQWS5M8g3vYrkFLR8hs17xK1-hZRk9A/viewform?usp=pp_url&entry.1055929021=160%20Chemin%20Extebekoborda&entry.865823250=BES1213",
         "ID": 213
       }
